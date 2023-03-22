@@ -1,57 +1,68 @@
-// <!-- -------------nav---------------- -->
-const nav = document.querySelector('nav');
-window.addEventListener('scroll', () => {
-  if (window.pageYOffset >= 100) {
-    nav.classList.add('scrolled');
-  } else {
-    nav.classList.remove('scrolled');
+let i=0;
+let txt="Backend Developer.";
+let speed=500;
+
+typeWriter()
+
+function typeWriter() {
+    if(i < txt.length){
+      document.getElementById("user-detail-name").style.color="white";
+      document.getElementById("demo1").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+    else {
+      // reset the index when it reaches the end of the text
+      i = 0;
+      // clear the text
+      document.getElementById("demo1").innerHTML = "";
+      // make the recursive call
+      document.getElementById("user-detail-name").style.Color="#71e281";
+      setTimeout(typeWriter, speed);
+    }
   }
-});
-
-var sidemenu=document.getElementById("sidemenu");
-function openmenu(){
-  sidemenu.style.right="0";
-}
-function closemenu(){
-  sidemenu.style.right="-200px";
-}
 
 
-// resume btn 
-let btns=document.getElementsByClassName("resume_btan");
-for(let btn of btns){
-  btn.addEventListener("click",()=>{
-    window.open("./imges/priti image professional pic.jpg", "_blank");
-  })
-}
+  var myNav = document.getElementById('nav-menu');
+  var myNav2 = document.getElementById('main');
+  window.onscroll = function () { 
+      if ( document.documentElement.scrollTop >= 15 ) {
+          myNav.classList.add("nav-colored");
+          myNav2.classList.add("nav-colored");
+          // myNav.classList.remove("nav-transparent");
+      } 
+      else {
+          // myNav.classList.add("nav-transparent");
+          myNav.classList.remove("nav-colored");
+          myNav2.classList.remove("nav-colored");
+      }
+  };
 
-// <!-- -------------about---------------- -->
-var tablinks=document.getElementsByClassName("tab-links");
-var tabcontents=document.getElementsByClassName("tab-contents");
-function opentab(tabname){
-    for(tablink of tablinks){
-        tablink.classList.remove("active-link")
-    }
-    for(tabcontent of tabcontents){
-        tabcontent.classList.remove("active-tab")
-    }
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab")
-}
+  GitHubCalendar(".calendar", "prititi", {
+    responsive: true,
+    global_stats: false,
+    tooltips: true,
+  });
+//   new GitHubCalendar(".calendar", "prititi");
 
+  document.getElementById("resume-button-1").onclick=()=>{
+window.open("https://drive.google.com/file/d/1z1ItRUkLo_LOThfF9EpdSZgE46Ed3DfC/view");
+  }
 
-
-
-var typed = new Typed(".typing-text", {
-  strings: ["Back-End Development", "Front-End Development","Database Management","API Development"],
-  loop: true,
-  typeSpeed: 50,
-  backSpeed: 25,
-  backDelay: 500,
-});
-
-const logoimg=document.querySelector(".logo");
-logoimg.addEventListener("click",()=>{
+  document.getElementById("resume-button-2").onclick=()=>{
+    window.open("https://drive.google.com/file/d/1z1ItRUkLo_LOThfF9EpdSZgE46Ed3DfC/view");
+  }
+     
   
-  window.scrollTo(0, 0);
-})
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.display = "none";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.display= "block";
+  }
+
+
+  
