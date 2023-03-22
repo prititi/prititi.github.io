@@ -21,7 +21,7 @@ function closemenu(){
 let btns=document.getElementsByClassName("resume_btan");
 for(let btn of btns){
   btn.addEventListener("click",()=>{
-    window.open("./imges/Priti-Tiwari-Resume (3).pdf", "_blank");
+    window.open("./imges/priti image professional pic.jpg", "_blank");
   })
 }
 
@@ -43,7 +43,7 @@ function opentab(tabname){
 
 
 var typed = new Typed(".typing-text", {
-  strings: ["Back-End Development", "Front-End Development","Designer"],
+  strings: ["Back-End Development", "Front-End Development","Database Management","API Development"],
   loop: true,
   typeSpeed: 50,
   backSpeed: 25,
