@@ -1,361 +1,859 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Priti</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js">
-    </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+  <link rel="icon" href="img/about.jpeg" />
 
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+  <link rel="stylesheet" href="style/swiper-bundle.css" />
+
+  <link rel="stylesheet" href="style/styles.css" />
+
+  <link rel="stylesheet" href="style/github_states.css" />
+
+  <title>Priti Tiwari</title>
 </head>
 
 <body>
-    <div class="scroll-up-btn">
-        <i class="fas fa-angle-up"></i>
-    </div>
-    <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <div>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-            <a href="./images/Priti-Tiwari-Resume (3).pdf" download>Resume <i class="fa fa-download"></i></a>
+  <!-- -----------------------------------------------------| NAVBAR |------------------------------------------------------ -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">Priti Tiwari</a>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list grid">
+          <li class="nav__item">
+            <a class="nav__link nav-link home" href="#home">
+              <i class="uil uil-estate nav__icon"></i>Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav-link about" href="#about ">
+              <i class="uil uil-user nav__icon"></i>About</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav-link skills" href="#skills">
+              <i class="uil uil-file-alt nav__icon"></i>Skills</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav-link projects" href="#projects">
+              <i class="uil uil-briefcase-alt nav__icon"></i>Projects</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav-link contact" href="#contact">
+              <i class="uil uil-link-alt nav__icon"></i>Contact Me</a>
+          </li>
+
+          <li class="nav__item">
+            <a id="resume-button-1" download class="nav__link nav-link resume" target="_blank"
+              href="./pdf/Priti_Tiwari_Resume.pdf">
+              <i class="uil uil-file-blank nav__icon"></i>Resume
+            </a>
+          </li>
+        </ul>
+        <i class="uil uil-times nav__close nav__icon" id="nav-close"></i>
+      </div>
+      <div class="nav__btns">
+        <i class="uil uil-moon change-theme" id="theme-button"></i>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="uil uil-apps nav__icon"></i>
         </div>
-    </div>
-    <div id="main">
-        <button class="openbtn" onclick="openNav()">☰</button>
+      </div>
+    </nav>
+  </header>
 
-    </div>
+  <!-- ----------------------------------------------------------- | HOME | -------------------------------------------------->
 
+  <main class="main">
+    <section class="home section" id="home">
+      <div class="home__container container grid">
+        <div class="home__content grid">
+          <!-- socials -->
+          <div class="home__social">
+            <a target="_blank" href="https://www.linkedin.com/in/priti-tiwari-5149b8255/" class="home__social-icon">
+              <i class="uil uil-linkedin-alt"></i>
+            </a>
+            <a target="_blank" href="https://github.com/prititi" class="home__social-icon">
+              <i class="uil uil-github-alt"></i>
+            </a>
+          </div>
+          <!-- profile image -->
 
-    <div id="nav-menu">
-        <h2 class="name"> <a href="#">
-                < Priti Tiwari />
-            </a></h2>
-        <div>
-            <a href="#home" class="nav-link home">Home</a>
-            <a href="#about" class="nav-link about">About</a>
-            <a href="#skills" class="nav-link skills">Skills</a>
-            <a href="#projects" class="nav-link projects">Projects</a>
-            <a href="#contact" class="nav-link contact">Contact</a>
-            <a href="./images/Priti-Tiwari-Resume (3).pdf" class="nav-link resume" id="resume-button-1" download>Resume <i
-                    class="fa fa-download"></i></a>
+          <div class="home__img">
+            <img src="./img/priti image professional pic.jpg" class="home-img" style="display: none" alt="" />
+            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <mask id="mask0" mask-type="alpha">
+                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+              </mask>
+              <g mask="url(#mask0)">
+                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
 
-        </div>
-    </div>
-
-    <div id="width">
-
-        <div id="home" class="home">
-            <div>
-                <h1>Hello, my name is </h1>
-                <div class="text-2" id="user-detail-name">
-                    < Priti />
-                </div>
-                <h1 id="demo">And I'm a <span id="demo1"></span> </h1>
-               
-            </div>
-           
-            <img class="home-img" src="/images/priti image professional pic.jpg" alt="">
-        </div>
-
-        <!-------------------------------- About Section ---------------------------------------->
-
-        <div id="about" class="about section">
-
-            <h2 class="mid">About</h2>
-            <hr>
-            <p id="user-detail-intro">
-                <h1 id="user-detail-name">I am Priti Tiwari</h1>
-                <br>
-                <p id="user-detail-intro">Passionate full-stack developer with robust design and
-                  problem-solving skills. A highly disciplined and motivated person
-                  having proficiency in a wide range of front-end and back-end
-                  skills like node JS, JavaScript, Express JS, MongoDB, etc. She is
-                  looking forward to launching her career as a node JS back-end
-                  developer.
-      </p>
-
+                <image class="home__blob-img" href="./img/priti image professional pic.jpg" />
+              </g>
+            </svg>
+          </div>
+          <!------------------------------------------------------ summary ---------------------------------------------------------------------- -->
+          <div class="home__data">
+            <h1 id="user-detail-name" class="home__title">
+              Hii, I'm Priti Tiwari
+            </h1>
+            <h3 class="home__subtitle">FULL STACK WEB DEVELOPER</h3>
+            <p class="home__description">
+              Enthusiastic about learning and expressing new technology. An
+              aspiring node developer with 1200+ hours of practical experience
+              in coding and building numerous websites. Solved 700+ DSA
+              questions. Strong ambition to work as a backend developer to
+              produce valuable solutions.
             </p>
-            <div id="aboutflex">
-                <a href="https://drive.google.com/file/d/1z1ItRUkLo_LOThfF9EpdSZgE46Ed3DfC/view" id="resume-button-2"
-                    download>Preview CV <i class="fa fa-download"></i></a>
-                <a href="./images/Priti-Tiwari-Resume (3).pdf" class="nav-link resume" id="resume-button-2" download>Download CV <i
-                        class="fa fa-download"></i></a>
+            <a href="#contact" class="button button--flex">
+              Contact Me
+              <i class="uil uil-comment-alt button__icon"></i>&nbsp&nbsp
+            </a>
+          </div>
+        </div>
+        <!-- div scrolll -->
+        <div class="home__scroll">
+          <a href="#about" class="home__scroll-button button--flex">
+            <span class="home__scroll-name">Scroll down</span>
+            <i class="uil uil-angle-down home__scroll-arrow"></i>
+          </a>
+        </div>
+      </div>
+    </section>
 
+    <!--  ----------------------|project-section |---------------------------------------------->
+
+    <section class="portfolio section" id="projects">
+      <h2 class="section__title">Projects</h2>
+
+      <div class="portfolio__container container swiper-container">
+        <div class="swiper-wrapper">
+          <div class="portfolio__content grid swiper-slide project-card">
+            <figure class="portfolio__figure">
+              <img src="./img/fun note.png" alt="" class="skills-card-img portfolio__img" />
+            </figure>
+            <div class="portfolio__data">
+              <h3 class="portfolio__title project-title">Easy Polling</h3>
+              <p class="portfolio__description project-tech-stack project-description">
+                Easy polls is the ultimate Q&A and polling platform for live and virtual meetings and events 
+                and it is a clone of slido.
+
+                <br />
+                Tech Stack :
+                NodeJS | socket.io | WebSocket | jsonwebtoken | bcrypt | Express | MongoDB | Postman | HTML
+                | CSS | JavaScript
+                <br />
+                functionlity:->
+                6 Modules: Admin, User, Ranking, Rating, Q&A, Quiz, Pricing, Events,
+                Searching, response in mobile application Users can log in, in
+                available view polls, and purchase the polls.
+              </p>
+              <a href="https://github.com/prititi/fun-note-365-" target="_blank"
+                class="project-github-link button button--flex button--small portfolio__button">
+                GitHubLink
+                <i class="uil uil-github-alt button__icon"></i>&nbsp
+              </a>
+              <a href="https://fun-note-365-fsps.vercel.app/" target="_blank"
+                class="button button--flex project-deployed-link button--small portfolio__button">
+                DeployedLink
+                <i class="uil uil-external-link-alt button__icon"></i>&nbsp
+              </a>
+            </div>
+          </div>
+
+          <!-- --------------------------------------------- | 2 | ----------------------------------------------------------- -->
+
+          <div class="portfolio__content grid swiper-slide project-card">
+            <figure class="portfolio__figure">
+              <img src="./img/magic_MSG.png" alt="" class="skills-card-img portfolio__img" />
+            </figure>
+            <div class="portfolio__data">
+              <h3 class="portfolio__title project-title">MAGIC_MSG</h3>
+              <p class="portfolio__description project-tech-stack project-description">
+                It is a chating base application you can easy chat with your friends.<br />
+                Tech Stack : NodeJS | Express | socket.io | HTML | CSS | JavaScript | API | Postman <br />
+                Areas of Responsibility Built the Live Chat.
                 
-                <div id="con">
-
-                    <a target="_blank" href="https://www.linkedin.com/in/priti-tiwari-5149b8255/"><img
-                            src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt=""></a>
-                    <a target="_blank" href="https://github.com/prititi"> <img
-                            src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt=""></a>
-                    <a target="_blank" href="pt446914@gmail.com"><img
-                            src="https://w7.pngwing.com/pngs/105/439/png-transparent-white-and-blue-message-icon-illustration-email-computer-icons-symbol-message-inbox-by-gmail-envelope-miscellaneous-blue-angle-thumbnail.png"
-                            alt=""></a>
-                </div>
-
+                <br />
+              </p>
+              <a href="https://github.com/prititi/chat-app" target="_blank"
+                class="project-github-link button button--flex button--small portfolio__button">
+                GitHubLink
+                <i class="uil uil-github-alt button__icon"></i>&nbsp
+              </a>
+              <a href="https://chat-app-tau-plum.vercel.app/" target="_blank"
+                class="button button--flex project-deployed-link button--small portfolio__button">
+                DeployedLink
+                <i class="uil uil-external-link-alt button__icon"></i>&nbsp
+              </a>
             </div>
+          </div>
+
+          <!-- -------------------------------- | 3 | ------------------------------------------------------ -->
+
+          <div class="portfolio__content grid swiper-slide project-card">
+            <figure class="portfolio__figure">
+              <img src="./img/home page.jpeg" alt="" class="skills-card-img portfolio__img" />
+            </figure>
+            <div class="portfolio__data">
+              <h3 class="portfolio__title project-title">
+                FASHION FUSION
+              </h3>
+              <p class="portfolio__description project-tech-stack project-description">
+                ABOF is a pure-play fashion e-commerce space.
+                 It provides your daily needs products.
+                  Collaborative project with 5 members built in 5 days.<br />
+                Tech Stack : HTML | CSS | JavaScript | API | Postman
+              </p>
+              <a href="https://github.com/prititi/tense-wool-1620" target="_blank"
+                class="project-github-link button button--flex button--small portfolio__button">
+                GitHubLink
+                <i class="uil uil-github-alt button__icon"></i>&nbsp
+              </a>
+              <a href="https://admirable-pavlova-852094.netlify.app/" target="_blank"
+                class="button button--flex project-deployed-link button--small portfolio__button">
+                DeployedLink
+                <i class="uil uil-external-link-alt button__icon"></i>&nbsp
+              </a>
+            </div>
+          </div>
+          <!-- --------------------------------- | 4 | -------------------------------------------- -->
+
+          <div class="portfolio__content grid swiper-slide project-card">
+            <figure class="portfolio__figure">
+              <img src="./img/vAaccine.png" alt="" class="skills-card-img portfolio__img" />
+            </figure>
+
+            <div class="portfolio__data">
+              <h3 class="portfolio__title project-title">
+                VACCINATION
+              </h3>
+              <p class="portfolio__description project-tech-stack project-description">
+                A vaccination base website here anyone can book the slotes.
+                Individual project built with in 5 days.<br />
+                <br />Tech Stack : HTML | CSS | JavaScript
+
+                <br />
+              </p>
+              <a href="https://github.com/prititi/vaccination" target="_blank"
+                class="project-github-link button button--flex button--small portfolio__button">
+                GitHubLink
+                <i class="uil uil-github-alt button__icon"></i>&nbsp
+              </a>
+              <a href="https://incomparable-cactus-47f867.netlify.app/" target="_blank"
+                class="button button--flex project-deployed-link button--small portfolio__button">
+                DeployedLink
+                <i class="uil uil-external-link-alt button__icon"></i>&nbsp
+              </a>
+            </div>
+          </div>
         </div>
 
-
-        <!-------------------------------- Skills Section ---------------------------------------->
-
-
-        <div id="skills">
-            <h2 class="mid">Skills</h2>
-            <hr>
-            <div id="grid">
-
-                <div class="skills-card-img">
-                    <img class="skills-card-img"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="">
-                    <h2 class="skills-card-name">HTML</h2>
-                </div>
-                <div class="skills-card-img">
-                    <img class="skills-card-img"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="">
-                    <h2 class="skills-card-name">CSS</h>
-                </div>
-                <div class="skills-card-img">
-                    <img class="skills-card-img"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                        alt="">
-                    <h2 class="skills-card-name">JavaScript</h2>
-                </div>
-                <div class="skills-card-img">
-                    <img class="skills-card-img" src="https://chiranjeev-thapliyal.vercel.app/svg/nodejs.svg" alt="">
-                    <h2 class="skills-card-name">NodeJS</h2>
-                </div>
-                <div class="skills-card-img">
-                    <img class="skills-card-img" src="https://rohithanss.github.io/skills/expressJs.png" alt="">
-                    <h2 class="skills-card-name">ExpressJS</h2>
-                </div>
-                <div class="skills-card-img">
-                    <img class="skills-card-img" src="https://chiranjeev-thapliyal.vercel.app/svg/mongodb.svg" alt="">
-                    <h2 class="skills-card-name">MongoDB</h2>
-                </div>
-                <div class="skills-card-img">
-                    <img src="https://www.orcawise.com/static/media/blog-49.b6416d45ddab666edf95.png" alt="">
-                    <h2 class="skills-card-name">JWT</h2>
-                </div>
-                <div class="skills-card-img">
-                    <img class="skills-card-img" src="https://chiranjeev-thapliyal.vercel.app/svg/git.svg" alt="">
-                    <h2 class="skills-card-name">Git</h2>
-                </div>
-                <div class="skills-card-img">
-                    <img class="skills-card-img"
-                        src="data:image/png;base64,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"
-                        alt="">
-                    <h2 class="skills-card-name">Github</h2>
-                </div>
-                <div class="skills-card">
-                    <img class="skills-card-img"
-                        src="data:image/jpeg;base64,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"
-                        alt="">
-                    <h2 class="skills-card-name">Vs Code</h2>
-                </div>
-                <div class="skills-card-img">
-                    <img class="skills-card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPLJrzmzI06L46Pr6v5qhGjactAQsvbF13rg&usqp=CAU" alt="">
-                    <h2 class="skills-card-name">POSTMAN</h2>
-                </div>
-                <div class="skills-card-img">
-                    <img class="skills-card-img" src="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" alt="">
-                    <h2 class="skills-card-name">AWS</h2>
-                </div>
-            </div>
+        <div class="swiper-button-next">
+          <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+        </div>
+        <div class="swiper-button-prev">
+          <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
         </div>
 
-        <!-------------------------------- Project Section ---------------------------------------->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <br /><br />
 
-        <div id="projects">
+    <!-- -----------------------------------| ABOUT | ---------------------------------------------------------->
 
-            <h2 class="mid">Projects</h2>
-            <hr>
+    <section class="about section" id="about">
+      <p id="user-detail-intro" style="display: none">
+        "JavaScript","MongoDB","NodeJS","HTML","CSS","Express","socket.io",
+      </p>
+      <h2 class="section__title">About Me</h2>
+      <span class="section__subtitle"></span>
+
+      <div class="about__container container">
+        <img src="img/about.jpeg" alt="" class="about__img" />
+
+        <div class="about__data">
+          <p class="about__description" id="user-detail-intro">
+            Hi! I'm Priti Tiwari
+            <br /><br />
+            I'm Learing Full Stack Web Development at Masai School.
+            <br /><br />
+            Enthusiastic about learning and expressing new technology. An
+            aspiring node developer with 1200+ hours of practical experience
+            in coding and building numerous websites. Solved 700+ DSA
+            questions. Strong ambition to work as a backend developer to
+            produce valuable solution
+            <br /><br />
+          </p>
+
+          <div class="about__info">
             <div>
-
-                <div class="project-card">
-
-                    <img src="/projectsimg/home page.jpeg" alt="">
-                    <p class="project-title">Fashion Fusion</p>
-                    <div class="project-description">
-                        <p> <b>Fashion Fusion</b> Clone of a famous E-commerce Website, built by a team of 5.</p>
-                        <p><b> Features : </b> Offers over 14000 products with easy-to-choose options,
-                            including adults, kids, and other type.
-                            Option to create own personalized shopping list of
-                            products.
-                            Admin and user controllers.
-                            Real-time product information. </p>
-                    </div>
-                    <div class="techstack">
-                        <p><b>Tech Stack : </b> </p>
-                        <p class="project-tech-stack">HTML, CSS, JavaScript, Bootstrap</p>
-                    </div>
-                    <div class="projectlinks">
-                        <br>
-                        <a target="_blank" href="https://github.com/prititi/tense-wool-1620"
-                            class="project-github-link">Source Code</a>
-                        <a target="_blank" href="https://admirable-pavlova-852094.netlify.app/"
-                            class="project-deployed-link">See Live</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="/projectsimg/tripoto.png" alt="">
-                    <p class="project-title">Tripoto clone</p>
-                    <div class="project-description">
-                        <p> <b>Tripoto clone</b>is a travelling base website. It is an individual project of using Node.js </p>
-                        <p><b> Features : </b>Login/Logout,Pagination, SignUp.
-                            Admin and user trip booking .
-                            Real-time location
-                            information..</p>
-                    </div>
-                    <div class="techstack">
-                        <p><b>Tech Stack : </b> </p>
-                        <p class="project-tech-stack">NodeJS, MongoDB,ExpressJS,HTML, CSS, JavaScript</p>
-
-                    </div>
-                    <div class="projectlinks">
-                        <br>
-                        <a target="_blank" href="https://github.com/prititi/precious-birds-1544-"
-                            class="project-github-link">Source Code</a>
-                        <a target="_blank" href="https://melodic-semolina-26df7a.netlify.app/"
-                            class="project-deployed-link">See Live</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="/projectsimg/vAaccine.png" alt="">
-                    <p class="project-title">Vaccination</p>
-                    <div class="project-description">
-                        <p>It is a Vaccination base website here anyone can book the slotes.</p>
-                        <p><b> Features : </b>A time tracker with various type of vaccines , Landing page, Sign up
-                            and dashboard.
-                            Detailing of various people who fill the form for vaccination slotes
-                            and functionalities.
-                        </p>
-                    </div>
-                    <div class="techstack">
-                        <p><b>Tech Stack :</b></p>
-                        <p class="project-tech-stack">HTML, CSS, JavaScript</p>
-
-                    </div>
-                    <div class="projectlinks">
-                        <br>
-                        <a target="_blank" href="https://github.com/prititi/vaccination"
-                            class="project-github-link">Source Code</a>
-                        <a target="_blank" href="https://incomparable-cactus-47f867.netlify.app/"
-                            class="project-deployed-link">See Live</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="/images/fourth.png" alt="">
-                    <p class="project-title">NXM Backend Project</p>
-                    <div class="project-description">
-                        <p> <b> OverStock</b> This is Complete Backend Project with all Functinality</p>
-                        <p><b> Features : </b> Login/Logout, SignUp, MongoDB Atlas ,Different Routers for admin and
-                            Users</p>
-                    </div>
-                    <div class="techstack">
-                        <p><b>Tech Stack :</b></p>
-                        <p class="project-tech-stack"> MongoDB, NodeJS, ExpressJS, HTML, CSS, JS, Bootstrap</p>
-
-                    </div>
-                    <div class="projectlinks">
-                        <br>
-                        <a target="_blank" href="https://github.com/manoharmeena123/nxmbackend"
-                            class="project-github-link">Source Code</a>
-                        <a target="_blank" href="https://lustrous-swan-b4b9fe.netlify.app/"
-                            class="project-deployed-link">See Live</a>
-                    </div>
-                </div>
-
+              <span class="about__info-title">1200+</span>
+              <span class="about__info-name">Hours of <br />
+                Coding</span>
             </div>
+
+            <div>
+              <span class="about__info-title">700+</span>
+              <span class="about__info-name">DSA <br />
+                Problems
+              </span>
+            </div>
+            <div>
+              <span class="about__info-title">25+</span>
+              <span class="about__info-name">Completed <br />
+                Project</span>
+            </div>
+          </div>
+
+          <div class="about__buttons" id="resume-button-2">
+            <a id="resume-button-2" download="" href="pdf/resume.pdf" target="_blank"
+              class="button button--flex">
+              Download CV<i class="uil uil-cloud-download button__icon"></i>&nbsp&nbsp
+            </a>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <!-------------------------------- Github Section ---------------------------------------->
+   
+    <a href="/Priti-Tiwari-Resume.pdf" id="resume-link-1" class="nav__link nav-link resume" download="Priti-Tiwari-Resume"
+      onclick="window.open('https://drive.google.com/file/d/1ZfKXsYL6jeD3NVr__uQF27kKdm2nxIda/view?usp=sharing')">
+      <i class="uil uil-message nav_icon"></i> Resume
+    </a>
+    <!----------------------------------------------------------------- SKILLS section ---------------------------------------------------------------- -->
 
+    <section class="skills section" id="skills">
+      <h2 class="section__title">Skills</h2>
+
+      <div class="skills__container container grid">
         <div>
-        <img  id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs?username=prititi&show_icons=true&locale=en&layout=compact" alt="">
-        
-        <div id="statsimg">
-        <img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=prititi&show_icons=true&locale=en" alt="">
-        <img  id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com/?user=prititi" alt="">
+          <div class="skills__content skills__close">
+            <div class="skills__header">
+              <i class="uil uil-brackets-curly skills__icon"></i>
+
+              <div>
+                <h1 class="skills__title">Frontend Development</h1>
+              </div>
+
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+
+            <div class="skills__list grid">
+              <div class="skills__data skills-card">
+                <div class="skills__titles">
+                  <h3 class="skills__name skills-card-name">HTML</h3>
+                  <span class="skills__number">80%</span>
+                </div>
+                <div class="skills__bar">
+                  <img class="skills-card-img fyouseek" src="" alt="" />
+                  <span class="skills__percentage skills__80"></span>
+                </div>
+              </div>
+
+              <div class="skills__data skills-card">
+                <div class="skills__titles">
+                  <h3 class="skills__name skills-card-name">CSS</h3>
+                  <span class="skills__number">70%</span>
+                </div>
+                <div class="skills__bar">
+                  <img class="skills-card-img fyouseek" src="" alt="" />
+                  <span class="skills__percentage skills__70"></span>
+                </div>
+              </div>
+
+              <div class="skills__data skills-card">
+                <div class="skills__titles">
+                  <h3 class="skills__name skills-card-name">JavaScript</h3>
+                  <span class="skills__number">80%</span>
+                </div>
+                <div class="skills__bar">
+                  <img class="skills-card-img fyouseek" src="" alt="" />
+                  <span class="skills__percentage skills__80"></span>
+                </div>
+              </div>
+              <!-- <div class="skills__data skills-card">
+                <div class="skills__titles">
+                  <h3 class="skills__name skills-card-name">Boostrap</h3>
+                  <span class="skills__number">70%</span>
+                </div>
+                <div class="skills__bar">
+                  <img class="skills-card-img fyouseek" src="" alt="" />
+                  <span class="skills__percentage skills__70"></span>
+                </div>
+              </div>
+              <div class="skills__data skills-card">
+                <div class="skills__titles">
+                  <h3 class="skills__name skills-card-name">swiperjs</h3>
+                  <span class="skills__number">70%</span>
+                </div>
+                <div class="skills__bar">
+                  <img class="skills-card-img fyouseek" src="" alt="" />
+                  <span class="skills__percentage skills__70"></span>
+                </div>
+              </div> -->
+            </div>
+          </div>
         </div>
-        
+        <!-- Backend -->
+        <div class="skills__content skills__close">
+          <div class="skills__header">
+            <i class="uil uil-cloud-database-tree skills__icon"></i>
+
+            <div>
+              <h1 class="skills__title">Backend Development</h1>
+            </div>
+
+            <i class="uil uil-angle-down skills__arrow"></i>
+          </div>
+
+          <div class="skills__list grid">
+            <div class="skills__data skills-card">
+              <div class="skills__titles">
+                <h3 class="skills__name skills-card-name">Node JS</h3>
+                <span class="skills__number">70%</span>
+              </div>
+              <div class="skills__bar">
+                <img class="skills-card-img fyouseek" src="" alt="" />
+                <span class="skills__percentage skills__70"></span>
+              </div>
+            </div>
+
+            <div class="skills__data skills-card">
+              <div class="skills__titles">
+                <h3 class="skills__name skills-card-name">Express JS</h3>
+                <span class="skills__number">70%</span>
+              </div>
+              <div class="skills__bar">
+                <img class="skills-card-img fyouseek" src="" alt="" />
+                <span class="skills__percentage skills__70"></span>
+              </div>
+            </div>
+            <div class="skills__data skills-card">
+              <div class="skills__titles">
+                <h3 class="skills__name skills-card-name">Redis</h3>
+                <span class="skills__number">60%</span>
+              </div>
+              <div class="skills__bar">
+                <img class="skills-card-img fyouseek" src="" alt="" />
+                <span class="skills__percentage skills__60"></span>
+              </div>
+            </div>
+
+            <div class="skills__data skills-card">
+              <div class="skills__titles">
+                <h3 class="skills__name skills-card-name">Mongoose</h3>
+                <span class="skills__number">70%</span>
+              </div>
+              <div class="skills__bar">
+                <img class="skills-card-img fyouseek" src="" alt="" />
+                <span class="skills__percentage skills__70"></span>
+              </div>
+            </div>
+
+            <div class="skills__data skills-card">
+              <div class="skills__titles">
+                <h3 class="skills__name skills-card-name">MongoDB</h3>
+                <span class="skills__number">70%</span>
+              </div>
+              <div class="skills__bar">
+                <img class="skills-card-img fyouseek" src="" alt="" />
+                <span class="skills__percentage skills__70"></span>
+              </div>
+            </div>
+
+            <div class="skills__data skills-card">
+              <div class="skills__titles">
+                <h3 class="skills__name skills-card-name">Rest APIs</h3>
+                <span class="skills__number">70%</span>
+              </div>
+              <div class="skills__bar">
+                <img class="skills-card-img fyouseek" src="" alt="" />
+                <span class="skills__percentage skills__70"></span>
+              </div>
+            </div>
+          </div>
         </div>
-           </div>
-        
-           <div id="calendar">
-            <h2 class="mid">Github Calendar</h2>
-            <hr>
-            <div  class="react-activity-calendar calendar">
-                <!-- Loading stuff -->
-                Loading the data just for you.
+        <!-- Tools -->
+        <div class="skills__content skills__close">
+          <div class="skills__header">
+            <i class="uil uil-arrow skills__icon"></i>
+            <div>
+              <h1 class="skills__title">Tools</h1>
             </div>
+
+            <i class="uil uil-angle-down skills__arrow"></i>
+          </div>
+
+          <div class="skills__list grid">
+            <div class="skills__data skills-card">
+              <div class="skills__titles">
+                <h3 class="skills__name skills-card-name">
+                  VS-Code | Codepan | Replit
+                </h3>
+                <span class="skills__number">90%</span>
+              </div>
+              <div class="skills__bar">
+                <img class="skills-card-img fyouseek" src="" alt="" />
+                <span class="skills__percentage skills__90"></span>
+              </div>
+            </div>
+
+            <div class="skills__data skills-card">
+              <div class="skills__titles">
+                <h3 class="skills__name skills-card-name">
+                  Netlify | Vercel | cylic.sh
+                </h3>
+                <span class="skills__number">70%</span>
+              </div>
+              <div class="skills__bar">
+                <img class="skills-card-img fyouseek" src="" alt="" />
+                <span class="skills__percentage skills__70"></span>
+              </div>
+            </div>
+
+            <div class="skills__data skills-card">
+              <div class="skills__titles">
+                <h3 class="skills__name skills-card-name">Git & Github</h3>
+                <span class="skills__number">70%</span>
+              </div>
+              <div class="skills__bar">
+                <img class="skills-card-img fyouseek" src="" alt="" />
+                <span class="skills__percentage skills__70"></span>
+              </div>
+            </div>
+
+            <div class="skills__data skills-card">
+              <div class="skills__titles">
+                <h3 class="skills__name skills-card-name">Postman</h3>
+                <span class="skills__number">70%</span>
+              </div>
+              <div class="skills__bar">
+                <img class="skills-card-img fyouseek" src="" alt="" />
+                <span class="skills__percentage skills__70"></span>
+              </div>
+            </div>
+
+            <div class="skills__data skills-card">
+              <div class="skills__titles">
+                <h3 class="skills__name skills-card-name">Canva</h3>
+                <span class="skills__number">70%</span>
+              </div>
+              <div class="skills__bar">
+                <img class="skills-card-img fyouseek" src="" alt="" />
+                <span class="skills__percentage skills__70"></span>
+              </div>
+            </div>
+
+            <div class="skills__data skills-card">
+              <div class="skills__titles">
+                <h3 class="skills__name skills-card-name">NPM</h3>
+                <span class="skills__number">70%</span>
+              </div>
+              <div class="skills__bar">
+                <img class="skills-card-img fyouseek" src="" alt="" />
+                <span class="skills__percentage skills__70"></span>
+              </div>
+            </div>
+          </div>
         </div>
-        
+        <!-- softskills -->
+        <div class="skills__content skills__close">
+          <div class="skills__header">
+            <i class="uil uil-analysis skills__icon"></i>
 
-
-
-
-
-        <!-------------------------------- Contact Section ---------------------------------------->
-
-        <div id="contact">
-
-            <h2 class="mid">Contact</h2>
-            <hr>
-
-
-            <div class="contactflex">
-
-                <a target="_blank" id="contact-github" href="https://github.com/prititi">
-                    <p> <i class="fa fa-github"></i> Github</p>
-                </a>
+            <div>
+              <h1 class="skills__title">Soft Skills</h1>
             </div>
-            <div class="contactflex">
 
-                <a target="_blank" id="contact-linkedin" href="https://www.linkedin.com/in/priti-tiwari-5149b8255/">
-                    <p> <i class="fa fa-linkedin"></i> Linkedin</p>
-                </a>
-            </div>
-            <div class="contactflex">
+            <i class="uil uil-angle-down skills__arrow"></i>
+          </div>
 
-                <a href="">
-                    <p id="contact-phone"><i class="fa fa-phone"></i> 6388011661</p>
-                </a>
+          <div class="skills__list grid">
+            <div class="skills__data skills-card">
+              <div class="skills__titles">
+                <h3 class="skills__name skills-card-name">
+                  Project Management
+                </h3>
+                <span class="skills__number">70%</span>
+              </div>
+              <div class="skills__bar">
+                <img class="skills-card-img fyouseek" src="" alt="" />
+                <span class="skills__percentage skills__70"></span>
+              </div>
             </div>
-            <div class="contactflex">
-                <a target="_blank" id="contact-email">
-                    <p><i class="fa fa-envelope"></i> pt446914@gmail.com</p>
-                </a>
+
+            <div class="skills__data skills-card">
+              <div class="skills__titles">
+                <h3 class="skills__name skills-card-name">Team Working</h3>
+                <span class="skills__number">70%</span>
+              </div>
+              <div class="skills__bar">
+                <img class="skills-card-img fyouseek" src="" alt="" />
+                <span class="skills__percentage skills__70"></span>
+              </div>
             </div>
-            <p class="name">Priti Tiwari
-                < />
-            </p>
+
+            <div class="skills__data skills-card">
+              <div class="skills__titles">
+                <h3 class="skills__name skills-card-name">
+                  Remotely Working
+                </h3>
+                <span class="skills__number">90%</span>
+              </div>
+              <div class="skills__bar">
+                <img class="skills-card-img fyouseek" src="" alt="" />
+                <span class="skills__percentage skills__90"></span>
+              </div>
+            </div>
+            <div class="skills__data skills-card">
+              <div class="skills__titles">
+                <h3 class="skills__name skills-card-name">Problem-Solving</h3>
+                <span class="skills__number">70%</span>
+              </div>
+              <div class="skills__bar">
+                <img class="skills-card-img fyouseek" src="" alt="" />
+                <span class="skills__percentage skills__70"></span>
+              </div>
+            </div>
+            <div class="skills__data skills-card">
+              <div class="skills__titles">
+                <h3 class="skills__name skills-card-name">Adaptability</h3>
+                <span class="skills__number">70%</span>
+              </div>
+              <div class="skills__bar">
+                <img class="skills-card-img fyouseek" src="" alt="" />
+                <span class="skills__percentage skills__70"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------- | github calender | ------------------------------------------------------ -->
+
+    <section class="about section container react-activity-calendar" id="github">
+      <h2 class="section__title">MY GITHUB CONTRIBUTION</h2>
+      <div class="Github-calendar">prititi :-)</div>
+    </section>
+
+    <section class="portfolio section githubstates" id="githubstates">
+      <h2 class="section__title">GitHub Activities</h2>
+
+      <div class="portfolio__container container swiper-container">
+        <div class="swiper-wrapper github-images">
+          <img id="github-streak-stats" class="portfolio__content grid swiper-slide"
+            src="https://github-readme-streak-stats.herokuapp.com?user=prititi&theme=holi-theme&hide_border=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D" />
+
+          <img id="github-top-langs" class="portfolio__content grid swiper-slide"
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=prititi&show_icons=true&locale=en&layout=compact&theme=github_dark&hide_border=true"
+            alt="ovi" />
+
+          <img id="github-stats-card" class="portfolio__content grid swiper-slide"
+            src="https://github-readme-stats.vercel.app/api?username=prititi&show_icons=true&locale=en&theme=github_dark&hide_border=true"
+            alt="ovi" />
+
+          <img class="portfolio__content grid swiper-slide"
+            src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=prititi&theme=github_dark" />
         </div>
 
+        <div class="swiper-button-next">
+          <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+        </div>
+        <div class="swiper-button-prev">
+          <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <br /><br />
+
+    <!-- ---------------------------------------------- |  CONTACT -SECTION | ------------------------------------------------------- -->
+
+    <section class="contact section" id="contact">
+      <h2 class="section__title">Contact</h2>
+      <a style="display: none" target="_blank" id="contact-email">
+        <p><i class="fa fa-envelope"></i> prititi</p>
+      </a>
+
+      <div class="contact__container container grid">
+        <div>
+          <div class="contact__information">
+            <a href="https://github.com/prititi" target="_blank"><i class="uil uil-github contact__icon"></i></a>
+            <div>
+              <h3 class="contact__title">GitHub</h3>
+              <a id="contact-github" href="https://github.com/prititi" target="_blank"><span
+                  class="contact__subtitle">@prititi</span></a>
+            </div>
+          </div>
+
+          <div class="contact__information">
+            <a id="contact-linkedin" href="https://www.linkedin.com/in/priti-tiwari-5149b8255/" target="_blank"><i
+                class="uil uil-linkedin contact__icon"></i></a>
+            <div>
+              <h3 class="contact__title">LinkedIn</h3>
+              <a href="https://www.linkedin.com/in/priti-tiwari-5149b8255/" target="_blank"><span
+                  class="contact__subtitle">https://www.linkedin.com/in/priti-tiwari-5149b8255/</span></a>
+            </div>
+          </div>
+
+          <div class="contact__information">
+            <a id="contact-email" href="mailto:pt446914@gmail.com"><i
+                class="uil uil-envelope-alt contact__icon"></i></a>
+            <div>
+              <h3 class="contact__title">Email</h3>
+              <a href="mailto:pt446914@gmail.com"><span
+                  class="contact__subtitle">pt446914@gmail.com</span></a>
+            </div>
+          </div>
+          
+          <div class="contact__information">
+            <i class="uil uil-map-marker contact__icon"></i>
+            <div>
+              <h3 class="contact__title">Location</h3>
+              <span class="contact__subtitle">KANPUR, UTTAR PRADESH</span>
+            </div>
+          </div>
+        </div>
+
+        <form action="" class="contact__form grid">
+          <div class="contact__inputs grid">
+            <div class="contact__content">
+              <label for="" class="contact__label">Name</label>
+              <input type="text" class="contact__input" />
+            </div>
+
+            <div class="contact__content">
+              <label for="" class="contact__label">Email</label>
+              <input type="email" class="contact__input" />
+            </div>
+          </div>
+          <div class="contact__content">
+            <label for="" class="contact__label">Project</label>
+            <input type="text" class="contact__input" />
+          </div>
+          <div class="contact__content">
+            <label for="" class="contact__label"> Write Your Message ....</label>
+            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+          </div>
+
+          <div>
+            <a href="mailto:pt446914@gmail.com" class="button button--flex">
+              Send Message
+              <i class="uil uil-comment-alt button__icon"></i>&nbsp&nbsp
+            </a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+
+
+  <!--  ---------------------------------------------------- | footer |---------------------------------------- -->
+
+  <footer class="footer">
+    <div class="footer__bg">
+      <div class="footer__container container grid">
+        <div>
+          <span class="footer__title">Priti Tiwari</span> <br />
+          <span class="footer__subtitle">Full Stack Web Developer</span>
+        </div>
+
+        <ul class="footer__links">
+          <li>
+            <a href="#home" class="footer__link">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="footer__link">About</a>
+          </li>
+          <li>
+            <a href="#portfolio" class="footer__link">Portfolio</a>
+          </li>
+        </ul>
+
+        <div class="footer__socials">
+          <a href="https://www.linkedin.com/in/priti-tiwari-5149b8255/" target="_blank" class="footer__social">
+            <i class="uil uil-linkedin"></i>
+          </a>
+          <a href="https://github.com/prititi " target="_blank" class="footer__social">
+            <i class="uil uil-github"></i>
+          </a>
+        </div>
+      </div>
+      <p class="footer__copy">
+        Made with <span style="color: #e25555">&hearts;</span> by Priti Tiwari
+        <br />
+        Copyright &#169; Priti Tiwari. All rights reserved.
+      </p>
     </div>
+  </footer>
 
-
-
-
-
-    <footer>
-        <span>Created By <a href="#">Priti</a>
-    </footer>
-
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="uil uil-arrow-up scrollup__icon"></i>
+  </a>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 </body>
 
 </html>
-<script src="index.js"></script>
+
+<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+<script>
+  GitHubCalendar(".Github-calendar", "prititi", { responsive: true });
+</script>
+
+<script src="js/swiper-bundle.min.js"></script>
+
+<script src="js/main.js"></script>
+
+<!-- =========================================== Thank you ==================================================================== -->
