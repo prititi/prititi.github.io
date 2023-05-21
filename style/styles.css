@@ -762,8 +762,21 @@ img {
 .portfolio__img {
     width: 100%;
     height: 220px;
+    /* height: 200vh; */
     border-radius: .5rem;
     justify-self: center;
+    transition: .3s ease-in-out;
+    box-shadow: #e05785 0px 13px 27px 0px, #e05785 0px 8px 16px 0px;
+    cursor: pointer;
+    /* transform: rotateX(0deg); */
+}
+.portfolio__img:focus {
+    outline: none;
+}
+
+.portfolio__img:hover {
+    /* margin-top: 20px; */
+    transform: scale(1.2);
 }
 
 .portfolio__title {
@@ -1320,7 +1333,6 @@ img {
         width: 400px;
         height: 220px;
     }
-
     .portfolio__content {
         align-items: center;
     }
